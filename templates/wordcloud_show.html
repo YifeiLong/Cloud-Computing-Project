@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>云计算数据可视化</title>
+    <link href="../static/styles/common.css" rel="stylesheet">
+    <link href="../static/styles/bootstrap.min.css" rel="stylesheet">
+    <link href="../static/styles/bootstrap-table.css" rel="stylesheet">
+    <link href="../static/styles/pagination.css" rel="stylesheet">
+    <script src="../static/scripts/Plugin/jquery-3.3.1.min.js"></script>
+    <script src="../static/scripts/Plugin/echarts.min.js"></script>
+    <script src="../static/scripts/Plugin/jquery.pagination.min.js"></script>
+    <script src="../static/scripts/common.js"></script>
+    <script src="../static/scripts/wordcloud_show.js"></script>
+</head>
+<body>
+<!--顶部-->
+<header class="header left">
+    <div class="left nav">
+        <ul>
+            <li><i class="nav_1"></i><a href="index.html">演唱会数据</a> </li>
+            <li><i class="nav_2"></i><a href="song.html">歌曲分析</a> </li>
+            <li><i class="nav_3"></i><a href="lyric.html">歌词分析</a> </li>
+            <li class="nav_active"><i class="nav_4"></i><a href="wordcloud_show.html">热度预测榜</a> </li>
+          </ul>
+    </div>
+    <div class="header_center left" style="position:relative">
+        <h2><strong>Taylor Swift 数据可视化</strong></h2>
+
+    </div>
+    <div class="right nav text_right">
+        <ul>
+
+        </ul>
+    </div>
+
+</header>
+<!--内容部分-->
+<div class="con left" style="width: 98%;margin-left: 1%;margin-bottom: 25px;">
+
+    <input type="text" placeholder="歌曲名称" style="width: 180px;height: 28px;border-radius: 3px;text-indent: 1em;border: 1px solid#4b8df8;color: #fff;" /><button class="btn btn-primary btn-sm" style="margin-left:20px"><span class="glyphicon glyphicon-search"></span>查询</button>
+
+    <div class="div_any_child">
+          <div class="table_p" style="height: 96%;margin-top: 20px;">
+              <table>
+                  <thead><tr>
+                      <th>排序</th>
+                      <th>歌曲名称</th>
+                      <th>热度值</th>
+                      <th>舞曲指数</th>
+                      <th>能量</th>
+                      <th>速度</th>
+                      <th>现场度</th>
+                  </tr>
+                  </thead>
+                  <tbody>
+                  <tr><td>1</td><td>Blank Space</td><td>82</td><td>0.76</td><td>0.703</td><td>95.997</td><td>0.0913</td></tr>
+                  <tr><td>2</td><td>Shake It Off</td><td>80</td><td>0.647</td><td>0.8</td><td>160.078</td><td>0.334</td></tr>
+                  <tr><td>3</td><td>Lover</td><td>80</td><td>0.359</td><td>0.543</td><td>68.534</td><td>0.118</td></tr>
+                  <tr><td>4</td><td>Delicate</td><td>78</td><td>0.75</td><td>0.404</td><td>95.045</td><td>0.0911</td></tr>
+                  <tr><td>5</td><td>You Need To Calm Down</td><td>78</td><td>0.771</td><td>0.671</td><td>85.026</td><td>0.0637</td></tr>
+                  <tr><td>6</td><td>Look What You Made Me Do</td><td>77</td><td>0.766</td><td>0.709</td><td>128.07</td><td>0.126</td></tr>
+                  <tr><td>7</td><td>Cruel Summer</td><td>77</td><td>0.552</td><td>0.702</td><td>169.994</td><td>0.105</td></tr>
+                  <tr><td>8</td><td>ME! (feat. Brendon Urie of Panic! At The Disco)</td><td>77</td><td>0.61</td><td>0.83</td><td>182.162</td><td>0.118</td></tr>
+                  <tr><td>9</td><td>Getaway Car</td><td>76</td><td>0.562</td><td>0.689</td><td>172.054</td><td>0.0888</td></tr>
+                  <tr><td>10</td><td>Paper Rings</td><td>76</td><td>0.811</td><td>0.719</td><td>103.979</td><td>0.0742</td></tr>
+                  </tbody>
+              </table>
+          </div>
+          <div class="box">
+              <div id="pagination" class="page fl"></div>
+          </div>
+        </div>
+
+
+    </div>
+{#</div>#}
+</body>
+</html>
